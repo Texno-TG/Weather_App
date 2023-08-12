@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="67"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical">
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@drawable/img"
+    android:contentDescription="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/City_and_Country"
+            android:paddingLeft="22dp"
+            android:text="Stockholm,\nSweden"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9A938C"
+            android:paddingLeft="22dp"
+            android:id="@+id/dayliy"
+            android:text="Tue, Jun 30"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="34dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:src="@drawable/img_1" />
+
+        <LinearLayout
+            android:layout_marginLeft="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Temps"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_bold"
+                android:text="00"
+                android:textColor="@color/black"
+                android:textSize="54dp" />
+
+            <TextView
+                android:id="@+id/possision"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Rain"
+                android:textColor="@color/black"
+                android:textSize="28dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="° C"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_4" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
